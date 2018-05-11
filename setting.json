@@ -1,0 +1,80 @@
+{
+    "editor.fontSize": 15,
+    "workbench.sideBar.location": "right",
+    "editor.minimap.enabled": false,
+    "zenMode.hideStatusBar": false,
+    "editor.rulers": [
+        108
+    ],
+    "workbench.activityBar.visible": false,
+    "window.zoomLevel": 1,
+    "files.autoSave": "afterDelay",
+    "git.autofetch": true,
+    "workbench.panel.defaultLocation": "right",
+    "explorer.confirmDelete": false,
+    // vim模式的配置
+    "vim.useSystemClipboard": true,  // 使用系统剪切板
+    "vim.useCtrlKeys": true,  // 使用vim的Ctrl键
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j","h"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.leader": ",",
+    "vim.handleKeys": {
+        // 用vscode的复制,查找,粘贴,替换
+        "<C-c>": false,
+        "<C-f>": false,
+        // "<C-v>": false,
+        "<C-h>": false,
+        "<C-e>": false,
+        "<C-w>": false,
+        "<C-x>": false,
+        "<C-y>": false
+    },
+    "vim.otherModesKeyBindingsNonRecursive": [
+        {
+            "before": [":"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.showCommands",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": ["L"],
+            "after": ["$"],
+        },
+        {
+            "before": ["H"],
+            "after": ["^"],
+        },
+        // {
+        //     "before": ["q"],
+        //     "after": [">", ">"],
+        // },
+    ],
+    "gitlens.gitExplorer.view": "repository",
+    // 代码运行环境
+    "workbench.iconTheme": "vscode-icons",
+    "editor.lineNumbers": "relative",
+    "diffEditor.ignoreTrimWhitespace": true,
+    "workbench.colorTheme": "Hopscotch (TextMate Theme)",
+    "editor.renderLineHighlight": "none",
+    "python.venvPath": "~/env",
+    "gitlens.keymap": "alternate",
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": true,
+        "suppressShowKeyBindingsNotice": true
+    },
+    "python.pythonPath": "/usr/bin/python3",
+}
