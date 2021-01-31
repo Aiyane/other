@@ -7,6 +7,8 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+" scheme 换行后括号不另起一行
+let paredit_electric_return=0
 " 设置行号
 set number
 " 设置语法高亮
