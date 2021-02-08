@@ -11,6 +11,8 @@ au Syntax * RainbowParenthesesLoadBraces
 let paredit_electric_return=0
 " 设置行号
 set number
+" 取消折行
+set nowrap
 " 设置语法高亮
 syntax on
 " 设置行首快捷键
