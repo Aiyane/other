@@ -34,7 +34,7 @@ let &t_SR = "\<Esc>]50;CursorShape=2\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 " 设置窗口分隔符
 set fillchars=vert:'
-highlight VertSplit ctermbg=0 ctermfg=0
+highlight VertSplit ctermbg=NONE ctermfg=0 cterm=NONE
 " 设置补全背景颜色
 highlight Pmenu    guibg=darkgrey  guifg=black ctermbg=darkgrey ctermfg=black
 highlight PmenuSel guibg=lightgrey guifg=black ctermbg=lightgrey ctermfg=black
@@ -43,13 +43,13 @@ set laststatus=2
 " 设置状态栏样式
 set statusline=%f%m%r%w\ [POS=%l,%v]\ [%{strftime(\"%m-%d\ %H:%M:%S\")}]
 " 设置状态栏颜色
-highlight StatusLine ctermbg=0 ctermfg=0
-highlight StatusLineNC ctermbg=0 ctermfg=0
+highlight StatusLine ctermbg=NONE ctermfg=0 cterm=bold
+highlight StatusLineNC ctermbg=NONE ctermfg=0 cterm=NONE
 " 设置终端状态栏颜色
-highlight StatusLineTerm ctermbg=0 ctermfg=0
-highlight StatusLineTermNC ctermbg=0 ctermfg=0
+highlight StatusLineTerm ctermbg=NONE ctermfg=0 cterm=bold
+highlight StatusLineTermNC ctermbg=NONE ctermfg=0 cterm=NONE
 " 设置 ~ 颜色
-highlight EndOfBuffer ctermfg=0 ctermbg=0
+highlight EndOfBuffer ctermfg=0 ctermbg=NONE
 " 设置 scheme 自动补全
 autocmd BufNewFile,BufRead *.ss,*.sc,*scm set filetype=scheme
 autocmd FileType scheme set dictionary=~/.vim/dict/scheme.dict
