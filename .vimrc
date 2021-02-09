@@ -48,6 +48,8 @@ highlight StatusLineNC ctermbg=0 ctermfg=0
 " 设置终端状态栏颜色
 highlight StatusLineTerm ctermbg=0 ctermfg=0
 highlight StatusLineTermNC ctermbg=0 ctermfg=0
+" 设置 ~ 颜色
+highlight EndOfBuffer ctermfg=0 ctermbg=0
 " 设置 scheme 自动补全
 autocmd BufNewFile,BufRead *.ss,*.sc,*scm set filetype=scheme
 autocmd FileType scheme set dictionary=~/.vim/dict/scheme.dict
