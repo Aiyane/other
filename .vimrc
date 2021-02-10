@@ -1,12 +1,7 @@
 " 设置运行时文件夹
 set runtimepath+=~/.vim
-" 设置自动加载文件夹
-source ~/.vim/autoload/*.vim
 " 自动启用彩虹括号
-au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
+let g:rainbow_active = 1
 " scheme 换行后括号不另起一行
 let paredit_electric_return=0
 " 设置行号
