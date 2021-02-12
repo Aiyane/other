@@ -4,6 +4,8 @@ set runtimepath+=~/.vim
 let g:rainbow_active = 1
 " scheme 换行后括号不另起一行
 let paredit_electric_return=0
+" 每次输入自动启动高亮
+autocmd BufEnter * :syntax sync fromstart
 " 设置行号
 set number
 " 取消折行
